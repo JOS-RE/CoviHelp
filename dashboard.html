@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@600&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+</head>
+
+<body>
+    <div class="covihelp">
+        <p><b>CoviHelp</b></p>
+        <p></p>
+    </div>
+    <div class="header">
+    </div>
+    <div class="icon">
+        <img src="Group 2.png" alt="CoviHelp">
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <container style="width: 70%; margin-top: 5%;">
+        <!-- ***** Features Small Start ***** -->
+        <section class="section home-feature">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div>
+                                <!-- ***** Features Small Item Start ***** -->
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                                    <div class="features-small-item">
+                                        <div class="icon">
+                                            <i><img src="assets/images/WP.png" alt=""></i>
+
+                                        </div>
+                                        <h5 class="features-title">Whatsapp Live query</h5>
+                                        <p>Have a <strong>live chat</strong> with the IntroBot AI to solve queries</p>
+                                        <a href="https://api.whatsapp.com/send/?phone=12345178991&text=COVID&app_absent=0" class="mainnn-button"><strong>Whatsapp Chat</strong></a>
+
+                                    </div>
+                                </div>
+                                <!-- ***** Features Small Item End ***** -->
+                            </div>
+                            <!-- ***** Features Small Item Start ***** -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                                <div class="features-small-item">
+                                    <div class="icon">
+                                        <i><img src="assets/images/plasma.png" alt=""></i>
+
+                                    </div>
+                                    <h5 class="features-title">Plasma Availability</h5>
+                                    <p>Know the <strong>Plasma </strong>Donations and availability</p>
+                                    <a href="https://iplasma.life/" class="mainnn-button"><strong> Plasma Details </strong>
+                                </a>
+
+                                </div>
+                            </div>
+                            <!-- ***** Features Small Item End ***** -->
+
+                            <!-- ***** Features Small Item Start ***** -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                                <div class="features-small-item">
+                                    <div class="icon">
+                                        <i><img src="assets/images/govt.png" alt=""></i>
+
+                                    </div>
+                                    <h5 class="features-title">Govt. Site</h5>
+                                    <p>Visit the online page provided by the <strong>Government </strong></p>
+                                    <a href="https://www.icmr.gov.in/" class="mainnn-button"><strong>Government
+                                        Site</strong></a>
+
+                                </div>
+                            </div>
+                            <!-- ***** Features Small Item End ***** -->
+                            <!-- ***** Features Small Item Start ***** -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                                <div class="features-small-item">
+                                    <div class="icon">
+                                        <i><img src="assets/images/ij2.png" alt=""></i>
+
+                                    </div>
+                                    <h5 class="features-title">Vaccination Slot booking</h5>
+                                    <p>Book your <strong>Vaccination</strong> slot now !</p>
+                                    <a href="https://app.cowin.gov.in/login" class="mainnn-button"><strong>Book your
+                                        Vaccination</strong></a>
+
+                                </div>
+                            </div>
+                            <!-- ***** Features Small Item End ***** -->
+
+                            <!-- ***** Features Small Item Start ***** -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                                <div class="features-small-item">
+                                    <div class="icon">
+                                        <i><img src="assets/images/ig111.png" alt=""></i>
+
+                                    </div>
+                                    <h5 class="features-title">Instagram Sources</h5>
+                                    <p>Visit the <strong>Instagram </strong> handles providing crucial information</p>
+                                    <a href="https://instagram.com/journey.of.youth_?igshid=153f789i24h3r" class="mainnn-button"><strong>Instagram page</strong></a>
+
+                                </div>
+                            </div>
+                            <!-- ***** Features Small Item End ***** -->
+                            <!-- ***** Features Small Item Start ***** -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                                <div class="features-small-item">
+                                    <div class="icon">
+                                        <i><img src="assets/images/DCS.png" alt=""></i>
+
+                                    </div>
+                                    <h5 class="features-title">Covid Positive guidelines</h5>
+                                    <p><strong>Covid Positive </strong> patients may follow these <strong>Guidelines
+                                    </strong></p>
+                                    <a href="" class="mainnn-button"><strong>Recovery Guidelines</strong></a>
+
+                                </div>
+                            </div>
+                            <!-- ***** Features Small Item End ***** -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Features Small End ***** -->
+    </container>
+
+
+
+
+    <script src="fireBase.js"></script>
+    <script src="login.js"></script>
+
+
+</body>
+
+</html>
