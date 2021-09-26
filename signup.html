@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,28 +16,49 @@
     <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
 </head>
+
 <body>
     <div class="covihelp">
-    <p><b>CoviHelp</b></p><p></p>
+        <p><b>CoviHelp</b></p>
+        <p></p>
     </div>
     <div class="header">
     </div>
     <div class="icon">
         <img src="Group 2.png" alt="CoviHelp">
     </div>
-    <h1 class="signupmen" >SignUp</h1>
+    <h1 class="signupmen">SignUp</h1>
     <div class="container">
-    
-        <!-- The surrounding HTML is left untouched by FirebaseUI.
-           Your app may use that space for branding, controls and other customizations.-->
-           <div class="onn"></div>
-           <div id="firebaseui-auth-container"></div>
-     </div>
-         
 
-<script src="fireBase.js"></script>
-<script src="login.js"></script>
-    
-    
+
+        <div id="sawo-container" style="height: 300px; width: 300px;"></div>
+
+
+
+    </div>
+    <script src="http://websdk.sawolabs.com/sawo.min.js"></script>
+    <script>
+        var config = {
+            // should be same as the id of the container created on 3rd step
+            containerID: "sawo-container",
+            // can be one of 'email' or 'phone_number_sms'
+            identifierType: "email",
+            // Add the API key copied from 2nd step
+            apiKey: "04b8cd16-6de4-41a0-9955-53447f170567",
+            // Add a callback here to handle the payload sent by sdk
+            onSuccess: (payload) => {
+                console.log(payload)
+                windows.location.replace("dashboard.html")
+            },
+        };
+        var sawo = new Sawo(config);
+        sawo.showForm();
+    </script>
+
+    <script src="fireBase.js"></script>
+
+
+
 </body>
+
 </html>
